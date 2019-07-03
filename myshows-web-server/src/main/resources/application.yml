@@ -1,0 +1,19 @@
+server:
+  port: 5000
+  servlet:
+    context-path: /myshows
+spring:
+  application:
+    name: myshows-web-application
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+com:
+  rjs:
+    myshows:
+      server:
+        auth-name: admin
+        auth-pass: ENC(nJ141rVrVJSsvS6HB+EeDRGigui5+cqx)
